@@ -1,0 +1,10 @@
+*.o
+*.so
+*.dylib
+build/
+bin/
+sentinel
+
+.idea/
+.vscode/
+*.swp
