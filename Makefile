@@ -1,20 +1,14 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall
+CXXFLAGS = -std=c++11 -O2 -Wall
 
 SRCS = main.cc server.cc
-OBJS = $(SRCS:.cc=.o)
-EXEC = sentinel
+TARGET = sentinel
 
-all: $(EXEC)
-
-$(EXEC): $(OBJS)
-	$(CXX) $(CXXFLAGS) $(OBJS) -o $(EXEC)
-
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+all: $(SRCS)
+	$(CXX) $(CXXFLAGS) $(SRCS) -o $(TARGET)
 
 clean:
-	rm -f $(OBJS) $(EXEC)
+	rm -f $(TARGET)
 
 .PHONY: all clean
 
