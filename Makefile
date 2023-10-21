@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -O2 -Wall
 
-SRCS = main.cc server.cc
+SRCS = main.cc server.cc util.cc
 TARGET = sentinel
 
 all: $(SRCS)
