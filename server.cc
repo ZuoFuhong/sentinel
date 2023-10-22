@@ -162,7 +162,6 @@ void Server::serve(int socket_fd) {
         }
         boundary = "--" + boundary;
         std::vector<std::string> parts = split(request_body, boundary);
-        std::cout << "parts size: " << parts.size() << std::endl;
         for (const std::string& part : parts) {
             if (part.empty() || part == "--\r\n" || part == "--") {
                 continue;
