@@ -6,6 +6,8 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <map>
+#include <cstring>
+#include <vector>
 
 bool parse_string_to_sockaddr(const std::string& addr, sockaddr_in& sockaddr);
 
