@@ -40,3 +40,5 @@ curl --location 'http://127.0.0.1:8080/command' \
 
 其中, 这里 shell 命令用户可以自由组合, 可以使用任何工程方式集成到工具进行服务的快速部署.
 
+提高工程效率的快部署方案: https://www.cnblogs.com/marszuo/p/17781421.html
+
